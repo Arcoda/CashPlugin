@@ -1,0 +1,9 @@
+name: CashPlugin
+version: '${project.version}'
+main: com.github.arcoda.cashplugin.CashPlugin
+api-version: 1.19
+authors: [ Arcoda ]
+description: Plugin for very specific use cases of the Cashcraft server
+commands:
+  cash:
+    description: General command to use CashPlugin
