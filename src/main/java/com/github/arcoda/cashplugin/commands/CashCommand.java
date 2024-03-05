@@ -62,7 +62,7 @@ public class CashCommand implements CommandExecutor {
             }
         }
         else {
-            send(sender, "Invalid commend length.");
+            send(sender, "Invalid command length.");
         }
         return true;
     }
