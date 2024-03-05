@@ -5,6 +5,7 @@ import com.github.arcoda.cashplugin.discord.listener.Message;
 import com.github.arcoda.cashplugin.discord.listener.SlashCommand;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
@@ -27,6 +28,7 @@ public class BotMain {
                             .addOption(OptionType.CHANNEL, "channel", "The channel you wish to unregister", true)
             ).queue();
         }
+        getApi.getPresence().setActivity(Activity.playing("CashCraft"));
         getApi.addEventListener(new SlashCommand(CashPlugin.getInstance.getConfig()));
         getApi.addEventListener(new Message());
     }

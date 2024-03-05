@@ -10,7 +10,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.security.auth.login.LoginException;
 import java.util.ArrayList;
-import java.util.List;
 
 public final class CashPlugin extends JavaPlugin {
 public static CashPlugin getInstance;
