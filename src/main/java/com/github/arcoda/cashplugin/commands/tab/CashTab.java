@@ -21,13 +21,13 @@ public class CashTab implements TabCompleter {
                 baseList.add("enable");
                 baseList.add("disable");
             }
-        } else if(args.length == 2 && args[0].equals("enable")) {
+        } else if(args.length == 2 && args[0].equals("disable")) {
             if (sender.isOp()){
                 for(Plugin p : CashPlugin.getInstance.getServer().getPluginManager().getPlugins()) {
                     if(p.isEnabled()) baseList.add(p.getName());
                 }
             }
-        } else if(args.length == 2 && args[0].equals("disable")) {
+        } else if(args.length == 2 && args[0].equals("enable")) {
             if (sender.isOp()){
                 for(Plugin p : CashPlugin.getInstance.getServer().getPluginManager().getPlugins()) {
                     if(!p.isEnabled()) baseList.add(p.getName());
